@@ -1,5 +1,8 @@
 const { booleanToWord } = require("../src");
 
 describe("booleanToWord", () => {
-  // how do we create specs again???
+  it("returns Fizz when passed a multiple of 3", () => {
+    expect(booleanToWord(true)).toBe("Yes");
+    expect(booleanToWord(false)).toBe("No");
+  });
 });

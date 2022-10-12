@@ -1,11 +1,14 @@
 const fizzBuzz = (number) => {
-  if (number % 5 === 0 && number % 3 === 0) {
+  const divisbleToFive = number % 5 === 0;
+  const divisbleToTree = number % 3 === 0;
+
+  if (divisbleToFive && divisbleToTree) {
     return "FizzBuzz";
   }
-  if (number % 5 === 0) {
+  if (divisbleToFive) {
     return "Buzz";
   }
-  if (number % 3 === 0) {
+  if (divisbleToTree) {
     return "Fizz";
   }
   return number;
