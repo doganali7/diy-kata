@@ -4,8 +4,8 @@ const numberToReversedDigits = (number) => {
     .map((num) => {
       return Number(num);
     });
-  console.log(myArr.reverse());
-  return myArr.reverse();
+  const newReversedArray = myArr.reverse();
+  return newReversedArray;
 };
 
 module.exports = numberToReversedDigits;
